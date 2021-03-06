@@ -1,0 +1,207 @@
+Ejercicio 1
+
+using System;
+
+namespace Adivinar_Edad
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero, div1, div2, div3, mod1, mod2, resultado1, resultado2;
+            Console.WriteLine("Piense en un numero");
+            Console.WriteLine("El numero que penso multipliquelo por 2");
+            Console.WriteLine("Luego sumele 8");
+            Console.WriteLine("Multipliquelo por 5");
+            try
+            {
+
+                Console.WriteLine("Ingrese el resultado");
+                numero = int.Parse(Console.ReadLine());
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Caracter ingresado no valido");
+                Console.WriteLine("Se le dara un numero por defecto");
+                Console.WriteLine("11");
+                numero = 11;
+            }
+            if(numero>0 && numero < 10000)
+            {
+                div1 = numero / 1000;
+                mod1 = numero % 1000;
+                div2 = mod1 / 100;
+                mod2 = mod1 % 100;
+                div3 = mod2 / 10;
+                resultado1 = (div1 * 100) + (div2 * 10) + div3;
+                resultado2 = resultado1 - 4;
+
+                Console.WriteLine("El numero que usted penso es: " + resultado2);
+            }
+            else
+            {
+                Console.WriteLine("Numero no valido");
+
+            }
+            Console.ReadKey();
+
+            
+        }
+    }
+}
+
+
+
+
+Proyecto 2
+using System;
+
+namespace Adivinar_Edad
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero, div1, div2, div3, mod1, mod2, resultado1, resultado2;
+            int mod3, div4;
+            Console.WriteLine("- Ingrese su día de nacimiento");
+            Console.WriteLine("- El numero que penso multipliquelo por 20");
+            Console.WriteLine("- Luego sumele 73");
+            Console.WriteLine("- Multipliquelo por 5");
+            Console.WriteLine("- Sumele el mes de nacimiento");
+            try
+            {
+                Console.WriteLine();
+                Console.WriteLine("Ingrese el resultado");
+                numero = int.Parse(Console.ReadLine());
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Caracter no valido");
+                Console.WriteLine("Se le dara un numero por defecto");
+                Console.WriteLine("3468");
+                numero = 3468;
+            }
+            Console.WriteLine();
+            numero -= 365;
+            if (numero > 0 && numero < 10000)
+            {
+                div1 = numero / 1000;
+                mod1 = numero % 1000;
+                div2 = mod1 / 100;
+                mod2 = mod1 % 100;
+                div3 = mod2 / 10;
+                mod3 = mod2 % 10;
+                div4 = mod2 / 1;
+                resultado1 = (div1*10)+div2;
+                resultado2 = (div3 * 10) + div4;
+                Console.WriteLine("Usted nacio el dia: " + resultado1);
+                Console.WriteLine("Su mes de nacimiento es: " + resultado2);
+            }
+            else
+            {
+                Console.WriteLine("Numero no valido");
+
+            }
+            Console.ReadKey();
+
+            
+        }
+    }
+}
+
+
+ejercicio 1
+using System;
+
+namespace Adivinar_Edad
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int totalpi, contador=0;
+            float rango=0.0f;
+            Console.WriteLine("Ingrese el total de piezas a ingresar ");
+            totalpi = int.Parse(Console.ReadLine());
+            for (int a = 0; a < totalpi; a++)
+            {
+                Console.WriteLine("Ingrese la longitud de perfil");
+                rango = float.Parse(Console.ReadLine());
+                if(rango>=1.20&& rango <= 1.30)
+                {
+                    contador++;
+                }
+            }
+            Console.WriteLine("El numero de piezas aptas son: " + contador);
+            Console.ReadKey();
+
+        }
+    }
+}
+
+
+
+
+using System;
+
+namespace Adivinar_Edad
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int totalpi;
+            float rango=0.0f, alturas=0.0f;
+            float promedios = 0.0f;
+            Console.WriteLine("Ingrese el total de personas a ingresar ");
+            totalpi = int.Parse(Console.ReadLine());
+            for (int a = 0; a < totalpi; a++)
+            {
+                Console.WriteLine("Ingrese la altura de las personas en cm");
+                rango = float.Parse(Console.ReadLine());
+                alturas += rango;
+            }
+            promedios = alturas / totalpi;
+            Console.WriteLine("El primedio es: " + promedios);
+            Console.ReadKey();
+
+        }
+    }
+}
+
+
+
+using System;
+
+namespace Adivinar_Edad
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num, contador = 0, contador2 = 0, contador3 = 0;
+            
+
+            for (int a = 0; a < 10; a++)
+            {
+                Console.WriteLine("Ingrese el primer numero");
+                num = int.Parse(Console.ReadLine());
+                if (num % 3 == 0 && num % 5 == 0)
+                {
+                    contador3++;
+                }
+                else if()
+            }
+            promedios = alturas / totalpi;
+            Console.WriteLine("El primedio es: " + promedios);
+            Console.ReadKey();
+
+        }
+    }
+}
+
+
+
+
+
